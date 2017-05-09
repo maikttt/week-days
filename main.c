@@ -4,8 +4,8 @@
 #include <math.h>
 
 const char *week_days[] = {
-    "Duminica", "Luni", "Marti",
-    "Miercuri", "Joi", "Vineri", "Simbata"
+    "Sunday", "Monday", "Tuesday",
+    "Wednesday", "Thursday", "Friday", "Saturday"
 };
 
 int calc_week_day(int k, int m, int n);
@@ -15,11 +15,11 @@ void main(int argc, char **argv) {
     int date[3]; // date, month, year
     int week_day;
 
-    printf("Data: ");
+    printf("Date: ");
     scanf("%d", &date[0]);
-    printf("Luna: ");
+    printf("Month: ");
     scanf("%d", &date[1]);
-    printf("Anul: ");
+    printf("Year: ");
     scanf("%d", &date[2]);
 
     trans(date);
